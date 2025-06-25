@@ -27,9 +27,9 @@ def text_transform(text):
   return " ".join(y)
 
 
-with open("files\model.pkl", "rb") as file:
+with open("model.pkl", "rb") as file:
   model = pickle.load(file)
-with open("files\\vectorizer.pkl", "rb") as file:
+with open("vectorizer.pkl", "rb") as file:
   tfidf = pickle.load(file)
 
 st.title("Email/SMS spam classifier")
